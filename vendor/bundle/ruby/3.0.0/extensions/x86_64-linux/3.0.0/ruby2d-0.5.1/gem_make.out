@@ -1,29 +1,25 @@
 current directory: /home/brunoV/Develop/Platzi/Ruby/ruby/snake/vendor/bundle/ruby/3.0.0/gems/ruby2d-0.5.1/ext/ruby2d
-/home/brunoV/.rbenv/versions/3.0.1/bin/ruby -I /home/brunoV/.rbenv/versions/3.0.1/lib/ruby/3.0.0 -r ./siteconf20210830-13065-iyfyyo.rb extconf.rb
-which: no simple2d in (/home/brunoV/.rbenv/versions/3.0.1/bin:/home/brunoV/.rbenv/libexec:/home/brunoV/.rbenv/plugins/ruby-build/bin:/home/brunoV/.rbenv/shims:/home/brunoV/.rbenv/bin:/home/brunoV/.local/bin:/home/brunoV/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin)
-*** extconf.rb failed ***
-Could not create Makefile due to some reason, probably lack of necessary
-libraries and/or headers.  Check the mkmf.log file for more details.  You may
-need configuration options.
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20210830-27902-zvcj2e.rb extconf.rb
+creating Makefile
 
-Provided configuration options:
-	--with-opt-dir
-	--without-opt-dir
-	--with-opt-include
-	--without-opt-include=${opt-dir}/include
-	--with-opt-lib
-	--without-opt-lib=${opt-dir}/lib
-	--with-make-prog
-	--without-make-prog
-	--srcdir=.
-	--curdir
-	--ruby=/home/brunoV/.rbenv/versions/3.0.1/bin/$(RUBY_BASE_NAME)
+current directory: /home/brunoV/Develop/Platzi/Ruby/ruby/snake/vendor/bundle/ruby/3.0.0/gems/ruby2d-0.5.1/ext/ruby2d
+make DESTDIR\= clean
+rm -f 
+rm -f ruby2d.so  *.o  *.bak mkmf.log .*.time
 
-== [1;31mRuby 2D Installation Errors[0m =======================================
+current directory: /home/brunoV/Develop/Platzi/Ruby/ruby/snake/vendor/bundle/ruby/3.0.0/gems/ruby2d-0.5.1/ext/ruby2d
+make DESTDIR\=
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2  -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -std=c11 -I/usr/local/include -m64 -o ruby2d.o -c ruby2d.c
+ruby2d.c: In function ‘ruby2d_window_ext_show’:
+ruby2d.c:915:5: warning: implicit declaration of function ‘S2D_LoadControllerMappingsFromFile’; did you mean ‘S2D_AddControllerMappingsFromFile’? [-Wimplicit-function-declaration]
+  915 |     S2D_LoadControllerMappingsFromFile(controller_mappings_path);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     S2D_AddControllerMappingsFromFile
+rm -f ruby2d.so
+gcc -shared -o ruby2d.so ruby2d.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector-strong -rdynamic -Wl,-export-dynamic -lsimple2d -I/usr/include/SDL2 -D_REENTRANT -pthread -lSDL2 -lGL -lm -lSDL2_image -lSDL2_mixer -lSDL2_ttf  -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld   -m64  -lruby  -lm   -lc
 
-  Ruby 2D uses a native library called Simple 2D, which was not found.
-  To install, follow the instructions at [1mruby2d.com/learn[0m
-
-=======================================================================
-
-extconf failed, exit code 1
+current directory: /home/brunoV/Develop/Platzi/Ruby/ruby/snake/vendor/bundle/ruby/3.0.0/gems/ruby2d-0.5.1/ext/ruby2d
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20210830-27902-zfwg19/ruby2d
+exit > .sitearchdir.-.ruby2d.time
+/usr/bin/install -c -m 0755 ruby2d.so ./.gem.20210830-27902-zfwg19/ruby2d

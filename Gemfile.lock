@@ -1,14 +1,27 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ruby2d (0.10.0)
+    ast (2.4.2)
+    hike (1.2.3)
+    minitest (5.14.4)
+    opal (0.11.4)
+      ast (>= 2.3.0)
+      hike (~> 1.2)
+      parser (= 2.3.3.1)
+      sourcemap (~> 0.1.0)
+    parser (2.3.3.1)
+      ast (~> 2.2)
+    ruby2d (0.5.1)
+      opal (~> 0.11)
+    sourcemap (0.1.1)
 
 PLATFORMS
   x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
-  ruby2d
+  minitest (~> 5)
+  ruby2d (~> 0.5.1)
 
 BUNDLED WITH
    2.2.22
