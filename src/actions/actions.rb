@@ -35,6 +35,10 @@ module Actions
         state.food = new_food
         state
     end
+    
+    def self.position_is_in_snake?(state, food)
+    
+    end
 
     def self.position_is_food?(state, next_position)
         state.food.row == next_position.row && state.food.col == next_position.col
