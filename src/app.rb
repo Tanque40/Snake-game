@@ -24,14 +24,15 @@ class App
 
     def init_timer(view)
         loop do
+            puntaje = @state.snake.positions.length - 2
             if @state.game_finished
                 puts "Juego Finalizado"
-                puts "Puntaje: #{@state.snake.positions.length - 2 }"
+                puts "Puntaje: #{puntaje}"
                 break
             end
             @state = Actions::move_snake(@state)
             @view.render(@state)    
-            sleep 0.5
+            sleep (1 / ( 2.0 + (puntaje / 10) )) 
         end
     end
 
