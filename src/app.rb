@@ -32,7 +32,7 @@ class App
             end
             @state = Actions::move_snake(@state)
             @view.render(@state)    
-            sleep (1 / ( 2.0 + (puntaje / 10) )) 
+            sleep (1 / ( 2.0 + (puntaje / 10.0) )) 
         end
     end
 

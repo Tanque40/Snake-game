@@ -53,7 +53,7 @@ module View
                 x: food.col * @pixel_size,
                 y: food.row * @pixel_size,
                 size: @pixel_size,
-                color: "yellow",
+                color: "#BA2D0B",
             )
 
         end
@@ -69,7 +69,7 @@ module View
                     x: pos.col * @pixel_size,
                     y: pos.row * @pixel_size,
                     size: @pixel_size,
-                    color: "green",
+                    color: "#73BA9B",
                 )
             end
 
