@@ -1,6 +1,6 @@
 # Buenas prácticas con Ruby
 
-Las __buenas prácticas en Ruby__ nos sirven para no llenar nuestra computadora con gemas y datos repetidos que puedan causar problemas con la ejecución de otros programas.
+Las __buenas prácticas en Ruby__ sirven para no llenar nuestra computadora con gemas y datos repetidos que puedan causar problemas con la ejecución de otros programas.
 
 Para ejecutar este juego con buenas prácticas, lo ideal es que una vez descargado el juego, ejecutes el comando:
 
@@ -22,4 +22,4 @@ Como se mencionó, se instalaran las gemas en la carpeta _vendor/bundler_. Para 
 bundle exec ruby src/app.rb
 ~~~
 
-Esto quiere decir que _Ruby_ se ejecutara únicamente con las gemas que configuramos para el _bundle_.
+Esto quiere decir que _Ruby_ se ejecutara **únicamente** con las gemas que configuramos para el _bundle_.
